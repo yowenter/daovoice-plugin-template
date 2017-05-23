@@ -1,0 +1,3 @@
+daovoice-sdk >=0.0.1
+django >=1.11
+

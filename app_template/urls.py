@@ -11,13 +11,11 @@ Make sure you've  add daovoice_urlpatterns  to  urlpatterns in the  project dire
 
 from django.conf.urls import url
 
-from {{ app_name }} import views
-
-
+import views
 
 daovoice_urlpatterns = [
-	url(r'^plugin\.json$',views.daovoice_plugin_json),
-	url(r'^hook/([^/]+)', views.daovoice_hook_api),
-	url(r'^(?P<path>.*)', views.service_plugin_page),
-	url(r'^plugin-setting', views.daovoice_plugin_setting_api)
+    url(r'^plugin\.json$', views.daovoice_plugin_json),
+    url(r'^hook/([^/]+)', views.daovoice_hook_api),
+    url(r'^(?P<path>.*)', views.serve_plugin_page),
+    url(r'^plugin-setting', views.daovoice_plugin_setting_api)
 ]
