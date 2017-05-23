@@ -13,7 +13,7 @@
           "ClassName": "dcv.client.htmlbridge.HtmlView",
           "Object": {
             "Root": {
-              "URL": "/"
+              "URL": "/index.html"
             }
           }
         }
