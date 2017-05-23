@@ -64,4 +64,4 @@ def daovoice_plugin_json(request):
 
 
 def serve_plugin_page(request, path):
-    serve(request, path, document_root=PLUGIN_HTML_DIR)
+    return serve(request, path, document_root=PLUGIN_HTML_DIR)

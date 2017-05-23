@@ -4,8 +4,9 @@ The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/{{ docs_version }}/topics/http/urls/
 
 
-Make sure you've  add daovoice_urlpatterns  to  urlpatterns in the  project directory `urls.py`
+!!! Make sure you've  add  daovoice_urlpatterns  to  urlpatterns in the  project directory `urls.py`
 
+urlpatterns += daovoice_urlpatterns
 
 """
 
