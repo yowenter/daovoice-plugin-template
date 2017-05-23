@@ -1,0 +1,24 @@
+{
+  "Extensions": {
+    "dcv.example.plugin.navigator": {
+      "ExtendedPoint": "dcv.navigator.nodeSpecs",
+      "Object": {
+        "NavigationTargetUID": "dcv.example.plugin.global.view"
+      }
+    },
+    "dcv.example.plugin.global.view": {
+      "ExtendedPoint": "dcv.global.views",
+      "Object": {
+        "ComponentClass": {
+          "ClassName": "dcv.client.htmlbridge.HtmlView",
+          "Object": {
+            "Root": {
+              "URL": "/"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Name": "dcv.example.plugin"
+}

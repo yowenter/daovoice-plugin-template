@@ -15,7 +15,7 @@ LOG = logging.getLogger(__name__)
 
 
 def __load_plugin_json():
-    plugin_json_path = os.path.join(os.path.dirname(__name__), "plugin.json")
+    plugin_json_path = os.path.join(os.path.dirname(__file__), "plugin.json")
     assert os.path.exists(plugin_json_path), "Plugin Json `%s` Not Found " % str(plugin_json_path)
     with open(plugin_json_path, 'r') as f:
         return json.load(f)
@@ -23,7 +23,7 @@ def __load_plugin_json():
 
 PLUGIN_JSON = __load_plugin_json()
 
-PLUGIN_HTML_DIR = os.path.join(os.path.dirname(__name__), "html")
+PLUGIN_HTML_DIR = os.path.join(os.path.dirname(__file__), "html")
 
 assert os.path.exists(PLUGIN_HTML_DIR), "Plugin HTML directory %s not exists" % PLUGIN_HTML_DIR
 
@@ -65,5 +65,3 @@ def daovoice_plugin_json(request):
 
 def serve_plugin_page(request, path):
     serve(request, path, document_root=PLUGIN_HTML_DIR)
-
-
