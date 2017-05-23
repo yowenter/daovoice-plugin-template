@@ -9,8 +9,9 @@ DaoVoice 插件 Django 应用模版， 帮您快速创建第一个插件。
 **使用指南**::
 
 
-	- ``git clone git@github.com:yowenter/daovoice-plugin-template.git``
-	- ``django-admin startapp --template={daovoice-plugin-template repo directory }/template myapp``
+	- git clone git@github.com:yowenter/daovoice-plugin-template.git
+	- django-admin startapp --template={daovoice-plugin-template repo directory }/app_template myapp
+	- add daovoice_url_patterns  in urls.py to django urlpatterns
 
 
 
@@ -21,6 +22,7 @@ DaoVoice 插件 Django 应用模版， 帮您快速创建第一个插件。
 	- ``html``, 您的插件页面
 	- ``views.py``, 插件逻辑代码。 包含 处理 Daovoice WebHook 逻辑和插件设置保存逻辑。
 	- ``models.py``, DaoVoice 插件数据模型。
+	- ``urls.py``, DaoVoice 插件路由
 
 
 
